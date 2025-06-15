@@ -2,10 +2,12 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\URL;
 use App\Models\User;
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\ServiceProvider;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,12 +26,16 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot():void
     {
         Paginator::useBootstrap();
 
         Gate::define('isAdmin', function (User $user) {
             return $user->is_admin;
         });
+
+        if (config('app.env') != 'local') {
+            URL::forceScheme('https');
+        }
     }
 }
