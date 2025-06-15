@@ -1,0 +1,210 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+.navbar {
+    background-image: linear-gradient(to right, #fff7ad, #5176d6);
+
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.grid-container-navbar {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    overflow: auto;
+}
+
+.container-news-home {
+    background-color: #232D47; 
+    position: relative; 
+}
+
+.container-video-home {
+    background-color: #232D47; 
+    position: relative; 
+}
+
+.container-background-news-home {
+    background-position: left top;
+    background-image: #232d47;
+    object-fit: cover;
+
+}
+
+#about-motto {
+    font-size: 33px;
+    font-weight: 500;
+    background: linear-gradient(to right, #fff7ad, #5176d6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+#about-background-image {
+    position: relative;
+}
+#gradient-about {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#padding-about-top {
+    padding: 80px;
+}
+
+.grid-container-news {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+
+.grid-container-footer {
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+}
+
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signup input{
+    border-radius: 0;
+    margin-bottom: -1px;
+}
+
+.gradient-welcome {
+    height: 770px;
+    width: 100%;
+    background-image: linear-gradient(to top, #C2C2C2, #C2C2C2, #ebebeb36, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gradient-news {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top,#3A3A3A, #3A3A3A, #ebebeb36, transparent);
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gradient-about {
+    height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(to top, #3A3A3A, #3A3A3A, #3A3A3A, #3A3A3A, #3a3a3aef, #3a3a3ab2, #ebebeb4d);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.gradient-contact {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(135deg, #fffde7, #e3f2fd);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#page-container {
+  position: relative;
+  min-height: 85vh;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contact-form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-form .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form .input-box input,
+.contact-form .input-box textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #3A3A3A;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .input-box span {
+    position: relative;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #3A3A3A;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box textarea:focus ~ span {
+    color: #1e9fe9;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .input-box input[type="submit"] {
+    width: 100%;
+    background-color: #3A3A3A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    transition: 0.5s;
+}
+
+.contact-form .input-box input[type="submit"]:hover {
+    background-color: #1e9fe9;
+    color: white;
+}
+
+.contact-info-content a:hover {
+      text-decoration: underline;
+    }
